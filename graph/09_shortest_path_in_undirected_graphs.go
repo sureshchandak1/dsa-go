@@ -5,6 +5,7 @@ import (
 	"fmt"
 )
 
+// Shortest path in an unweighted graph
 func shortestPathUndirectedGraph(edges [][]int, source, destination int) {
 
 	adj = make(map[int][]int)
