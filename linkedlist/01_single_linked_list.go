@@ -3,8 +3,8 @@ package linkedlist
 import "fmt"
 
 type SingleLinkedList struct {
-	head *Node
-	tail *Node
+	head *Node // head of list (Starting node)
+	tail *Node // end of list (Ending node)
 }
 
 func (s *SingleLinkedList) insert(data int) {
