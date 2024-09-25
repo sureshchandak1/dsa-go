@@ -30,7 +30,7 @@ func findMiddleNodeOptimized(head *Node) *Node {
 	}
 
 	slow := head
-	fast := head
+	fast := head.Next
 
 	for fast != nil {
 		// fast move 2 step
