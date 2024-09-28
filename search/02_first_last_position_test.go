@@ -18,3 +18,12 @@ func TestFirstLastIndex(t *testing.T) {
 	firstIndex, lastIndex, element = firstLastPosition(arr, 5)
 	fmt.Printf("%d: First: %d, Last: %d\n", element, firstIndex, lastIndex)
 }
+
+func TestNumberOfOccurrence(t *testing.T) {
+
+	arr := []int{1, 8, 12, 15, 17, 17, 18, 18, 18, 18, 19}
+
+	fmt.Println("Number of Occurrence: ", numberOfOccurrence(arr, 17))
+	fmt.Println("Number of Occurrence: ", numberOfOccurrence(arr, 18))
+	fmt.Println("Number of Occurrence: ", numberOfOccurrence(arr, 19))
+}

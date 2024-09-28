@@ -8,6 +8,18 @@ func firstLastPosition(arr []int, element int) (int, int, int) {
 	return first, last, element
 }
 
+func numberOfOccurrence(arr []int, element int) int {
+
+	firstIndex := firstPosition(arr, element)
+	lastIndex := lastPosition(arr, element)
+
+	if firstIndex == -1 || lastIndex == -1 {
+		return 0
+	}
+
+	return (lastIndex - firstIndex) + 1
+}
+
 func firstPosition(arr []int, element int) int {
 
 	start := 0
