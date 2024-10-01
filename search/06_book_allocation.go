@@ -48,6 +48,6 @@ func isAllocationPositble(bookPages []int, totalStudent, mid int) bool {
 		}
 	}
 
-	return studentCount == totalStudent
+	return true
 
 }
