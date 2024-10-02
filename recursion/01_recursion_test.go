@@ -137,3 +137,12 @@ func TestQuickSort(t *testing.T) {
 	quickSort(arr, 0, len(arr)-1)
 	fmt.Println(arr)
 }
+
+func TestSubsequences(t *testing.T) {
+	fmt.Println(getStrSubsequences("abc"))
+	fmt.Println(getStrSubsequences("bbb"))
+}
+
+func TestSubsets(t *testing.T) {
+	fmt.Println(getSubsets([]int{1, 2, 3}))
+}
