@@ -53,3 +53,19 @@ func TestBinarySearch(t *testing.T) {
 	fmt.Println(linearSearch(even, 12, 0))
 	fmt.Println(linearSearch(odd, 12, 0))
 }
+
+func TestBubbleSort(t *testing.T) {
+	fmt.Println("----------Bubble Sort----------")
+
+	arr := []int{29, 72, 98, 13, 87, 66, 52, 51, 36}
+	fmt.Println(arr)
+
+	bubbleSort(arr, len(arr))
+	fmt.Println(arr)
+
+	arr = []int{10, 9, 8, 7, 6, 5, 4, 3, 2, 1}
+	fmt.Println(arr)
+
+	bubbleSort(arr, len(arr))
+	fmt.Println(arr)
+}
