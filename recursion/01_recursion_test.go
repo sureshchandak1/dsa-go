@@ -69,3 +69,71 @@ func TestBubbleSort(t *testing.T) {
 	bubbleSort(arr, len(arr))
 	fmt.Println(arr)
 }
+
+func TestPalindrome(t *testing.T) {
+	str := "abcde"
+	fmt.Println(isPalindromeString(str, 0, len(str)-1))
+	str = "abccba"
+	fmt.Println(isPalindromeString(str, 0, len(str)-1))
+}
+
+func TestPower(t *testing.T) {
+	fmt.Println(powerOptimized(2, 4))
+	fmt.Println(powerOptimized(2, 10))
+	fmt.Println(powerOptimized(3, 10))
+	fmt.Println(powerOptimized(3, 11))
+}
+
+func TestReverseString(t *testing.T) {
+	str := "123456789"
+	runes := []rune(str)
+
+	fmt.Println(reverseString(str))
+	reverseStr(runes, 0, len(runes)-1)
+	fmt.Println(string(runes))
+
+}
+
+func TestMergeSort(t *testing.T) {
+	fmt.Println("----------Merge Sort----------")
+
+	arr := []int{29, 72, 98, 13, 87, 66, 52, 51, 36}
+	fmt.Println(arr)
+
+	mergeSort(arr, 0, len(arr)-1)
+	fmt.Println(arr)
+
+	arr = []int{10, 9, 8, 7, 6, 5, 4, 3, 2, 1}
+	fmt.Println(arr)
+
+	mergeSort(arr, 0, len(arr)-1)
+	fmt.Println(arr)
+
+	arr = []int{3, 7, 0, 1, 5, 8, 3, 2, 34, 66, 87, 23, 12, 12, 12}
+	fmt.Println(arr)
+
+	mergeSort(arr, 0, len(arr)-1)
+	fmt.Println(arr)
+}
+
+func TestQuickSort(t *testing.T) {
+	fmt.Println("----------Quick Sort----------")
+
+	arr := []int{29, 72, 98, 13, 87, 66, 52, 51, 36}
+	fmt.Println(arr)
+
+	quickSort(arr, 0, len(arr)-1)
+	fmt.Println(arr)
+
+	arr = []int{10, 9, 8, 7, 6, 5, 4, 3, 2, 1}
+	fmt.Println(arr)
+
+	quickSort(arr, 0, len(arr)-1)
+	fmt.Println(arr)
+
+	arr = []int{3, 7, 0, 1, 5, 8, 3, 2, 34, 66, 87, 23, 12, 12, 12}
+	fmt.Println(arr)
+
+	quickSort(arr, 0, len(arr)-1)
+	fmt.Println(arr)
+}
