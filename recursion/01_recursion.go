@@ -57,3 +57,19 @@ func power(n int, p int) int {
 
 	return ans
 }
+
+func arraySum(arr []int, index int) int {
+
+	// Base case
+	if index == len(arr) {
+		return 0
+	}
+
+	// Recursion
+	remainingPart := arraySum(arr, index+1)
+
+	// Processing
+	sum := arr[index] + remainingPart
+
+	return sum
+}

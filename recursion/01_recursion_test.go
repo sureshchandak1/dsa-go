@@ -17,6 +17,8 @@ func TestRecursion(t *testing.T) {
 	fmt.Println("Factorial:", factorial(6))
 
 	fmt.Println("Power:", power(2, 4))
+
+	fmt.Println("Array Sum:", arraySum([]int{10, 20, 30, 40}, 0))
 }
 
 func TestClimbStair(t *testing.T) {
@@ -33,4 +35,21 @@ func TestFibonacci(t *testing.T) {
 func TestSatDigits(t *testing.T) {
 	counts := []string{"Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"}
 	sayDigits(412, counts)
+}
+
+func TestBinarySearch(t *testing.T) {
+	even := []int{2, 4, 6, 8, 12, 18}
+	odd := []int{3, 8, 11, 14, 16}
+
+	fmt.Println("isSorted:", isSorted(even, 0, len(even)))
+	fmt.Println("isSorted:", isSorted(odd, 0, len(odd)))
+
+	fmt.Println(binarySearch(even, 0, len(even)-1, 12))
+	fmt.Println(binarySearch(odd, 0, len(odd)-1, 12))
+
+	fmt.Println(binarySearch(even, 0, len(even)-1, 14))
+	fmt.Println(binarySearch(odd, 0, len(odd)-1, 14))
+
+	fmt.Println(linearSearch(even, 12, 0))
+	fmt.Println(linearSearch(odd, 12, 0))
 }
