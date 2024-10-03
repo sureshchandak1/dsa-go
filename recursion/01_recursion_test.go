@@ -146,3 +146,19 @@ func TestSubsequences(t *testing.T) {
 func TestSubsets(t *testing.T) {
 	fmt.Println(getSubsets([]int{1, 2, 3}))
 }
+
+func TestKeypad(t *testing.T) {
+	fmt.Println(letterCombinations("23"))
+	fmt.Println(letterCombinations("77"))
+	fmt.Println(letterCombinations(""))
+	fmt.Println(letterCombinations("235"))
+}
+
+func TestPermutations(t *testing.T) {
+	fmt.Println(uniquePermutations("abc"))
+	fmt.Println(uniquePermutations("aa"))
+	fmt.Println(uniquePermutations("aaab"))
+	fmt.Println(uniquePermutationsArray([]int{1, 2, 3}))
+	fmt.Println(uniquePermutationsArray([]int{1, 2}))
+	fmt.Println(uniquePermutationsArray([]int{1}))
+}
