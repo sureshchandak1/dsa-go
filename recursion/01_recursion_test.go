@@ -162,3 +162,17 @@ func TestPermutations(t *testing.T) {
 	fmt.Println(uniquePermutationsArray([]int{1, 2}))
 	fmt.Println(uniquePermutationsArray([]int{1}))
 }
+
+func TestRatInMaze(t *testing.T) {
+
+	board := [][]int{
+		{1, 0, 0, 0},
+		{1, 1, 0, 0},
+		{1, 1, 0, 0},
+		{0, 1, 1, 1},
+	}
+
+	result := findRatPath(board, len(board))
+
+	fmt.Println(result)
+}
