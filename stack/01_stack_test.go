@@ -140,6 +140,11 @@ func TestSortStack(t *testing.T) {
 
 }
 
+func TestRedundantBrackets(t *testing.T) {
+	fmt.Println(findRedundantBrackets("(a+b)"))
+	fmt.Println(findRedundantBrackets("(a+c*b)+(c))"))
+}
+
 func printStack(stack *list.List) {
 	fmt.Print("[ ")
 	for stack.Len() != 0 {
