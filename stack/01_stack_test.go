@@ -100,6 +100,46 @@ func TestPushBottom(t *testing.T) {
 
 }
 
+func TestReverseStack(t *testing.T) {
+	stack := list.New()
+	stack.PushBack(10)
+	stack.PushBack(20)
+	stack.PushBack(30)
+	stack.PushBack(40)
+	stack.PushBack(50)
+	stack.PushBack(60)
+	stack.PushBack(70)
+
+	fmt.Println("Stack Top:", stack.Back().Value)
+
+	reverseStack(stack)
+
+	fmt.Println("Stack Top:", stack.Back().Value)
+
+	printStack(stack)
+
+}
+
+func TestSortStack(t *testing.T) {
+	stack := list.New()
+	stack.PushBack(70)
+	stack.PushBack(60)
+	stack.PushBack(50)
+	stack.PushBack(40)
+	stack.PushBack(30)
+	stack.PushBack(20)
+	stack.PushBack(10)
+
+	fmt.Println("Stack Top:", stack.Back().Value)
+
+	sortStack(stack)
+
+	fmt.Println("Stack Top:", stack.Back().Value)
+
+	printStack(stack)
+
+}
+
 func printStack(stack *list.List) {
 	fmt.Print("[ ")
 	for stack.Len() != 0 {
