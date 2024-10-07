@@ -4,21 +4,21 @@ import "container/list"
 
 func isValidParenthesis(str string) bool {
 
-	runes := []rune(str)
 	stack := list.New()
 
-	for i := 0; i < len(runes); i++ {
+	for i := 0; i < len(str); i++ {
 
-		var ch int32 = runes[i]
+		var ch byte = str[i]
 
 		if ch == '{' || ch == '(' || ch == '[' {
 			stack.PushBack(ch)
 		} else {
 			if stack.Len() > 0 {
 				back := stack.Back()
-				if (ch == '}' && back.Value == '{') ||
-					(ch == ')' && back.Value == '(') ||
-					(ch == ']' && back.Value == '[') {
+				peek := back.Value.(byte)
+				if (ch == '}' && peek == '{') ||
+					(ch == ')' && peek == '(') ||
+					(ch == ']' && peek == '[') {
 
 					stack.Remove(back)
 				} else {

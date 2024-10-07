@@ -73,10 +73,31 @@ func TestDeleteMiddleElement(t *testing.T) {
 	printStack(stack)
 
 }
+
 func TestIsValidParenthesis(t *testing.T) {
 	fmt.Println(isValidParenthesis("[()]{}{[()()]()}"))
 	fmt.Println(isValidParenthesis("[[}["))
 	fmt.Println(isValidParenthesis("[(])"))
+}
+
+func TestPushBottom(t *testing.T) {
+	stack := list.New()
+	stack.PushBack(10)
+	stack.PushBack(20)
+	stack.PushBack(30)
+	stack.PushBack(40)
+	stack.PushBack(50)
+	stack.PushBack(60)
+	stack.PushBack(70)
+
+	fmt.Println("Stack Top:", stack.Back().Value)
+
+	insertStackBottom(stack, 80)
+
+	fmt.Println("Stack Top:", stack.Back().Value)
+
+	printStack(stack)
+
 }
 
 func printStack(stack *list.List) {
