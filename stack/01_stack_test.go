@@ -145,6 +145,17 @@ func TestRedundantBrackets(t *testing.T) {
 	fmt.Println(findRedundantBrackets("(a+c*b)+(c))"))
 }
 
+func TestFindMinimumCost(t *testing.T) {
+	println(findMinimumCost("{{{}"))
+	println(findMinimumCost("{{}{}}"))
+	println(findMinimumCost("{}}{}}"))
+	println(findMinimumCost("{{{{"))
+	println(findMinimumCost("{{{}}"))
+	println(findMinimumCost("}{}"))
+	println(findMinimumCost("{}}{{}"))
+	println(findMinimumCost("{{}}}{"))
+}
+
 func printStack(stack *list.List) {
 	fmt.Print("[ ")
 	for stack.Len() != 0 {
