@@ -2,7 +2,7 @@ package stack
 
 import "container/list"
 
-func largestRectangle(heights []int) int {
+func largestRectangleArea(heights []int) int {
 
 	size := len(heights)
 

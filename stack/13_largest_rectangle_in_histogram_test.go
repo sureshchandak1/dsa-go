@@ -19,12 +19,12 @@ func TestPrevSmallerElements(t *testing.T) {
 	fmt.Println(prevSmallerElements([]int{1, 2, 3, 4}))
 }
 
-func TestLargestRectangle(t *testing.T) {
-	fmt.Println(largestRectangle([]int{1, 0, 1, 2, 2, 2, 2, 1, 0, 2}))
-	fmt.Println(largestRectangle([]int{1, 2, 1, 0, 1, 1, 0, 0, 2, 2}))
-	fmt.Println(largestRectangle([]int{8, 6, 3, 5, 0, 0, 4, 10, 2, 5}))
-	fmt.Println(largestRectangle([]int{6, 1, 8, 10, 5, 7, 0, 4, 5, 8}))
-	fmt.Println(largestRectangle([]int{2, 2, 2, 2, 2, 2, 2}))
-	fmt.Println(largestRectangle([]int{2}))
-	fmt.Println(largestRectangle([]int{2, 2}))
+func TestLargestRectangleArea(t *testing.T) {
+	fmt.Println(largestRectangleArea([]int{1, 0, 1, 2, 2, 2, 2, 1, 0, 2}))
+	fmt.Println(largestRectangleArea([]int{1, 2, 1, 0, 1, 1, 0, 0, 2, 2}))
+	fmt.Println(largestRectangleArea([]int{8, 6, 3, 5, 0, 0, 4, 10, 2, 5}))
+	fmt.Println(largestRectangleArea([]int{6, 1, 8, 10, 5, 7, 0, 4, 5, 8}))
+	fmt.Println(largestRectangleArea([]int{2, 2, 2, 2, 2, 2, 2}))
+	fmt.Println(largestRectangleArea([]int{2}))
+	fmt.Println(largestRectangleArea([]int{2, 2}))
 }
