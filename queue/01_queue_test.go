@@ -1,6 +1,7 @@
 package queue
 
 import (
+	"container/list"
 	"fmt"
 	"testing"
 )
@@ -100,4 +101,35 @@ func TestDeque(t *testing.T) {
 	queue.pushRear(2002)
 
 	fmt.Println(queue.arr)
+}
+
+func TestReverseQueue(t *testing.T) {
+
+	queue := list.New()
+	queue.PushBack(10)
+	queue.PushBack(20)
+	queue.PushBack(30)
+	queue.PushBack(40)
+	queue.PushBack(50)
+
+	printList(queue)
+
+	reverseQueue(queue)
+
+	printList(queue)
+}
+
+func TestFirstNegativeIntegerInWindow(t *testing.T) {
+	fmt.Println(firstNegativeIntegerInWindow([]int{-10, 20, -30, -40, 50, 60, -70, 80, 90}, 3))
+	fmt.Println(firstNegativeIntegerInWindow([]int{-10, 20, 30, -40, -50, 60}, 2))
+}
+
+func printList(list *list.List) {
+	fmt.Print("[ ")
+	for e := list.Front(); e != nil; e = e.Next() {
+		fmt.Print(e.Value)
+		fmt.Print(" ")
+	}
+	fmt.Print("]")
+	fmt.Println()
 }
