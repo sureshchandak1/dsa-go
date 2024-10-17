@@ -124,6 +124,22 @@ func TestFirstNegativeIntegerInWindow(t *testing.T) {
 	fmt.Println(firstNegativeIntegerInWindow([]int{-10, 20, 30, -40, -50, 60}, 2))
 }
 
+func TestReverseKElements(t *testing.T) {
+
+	queue := list.New()
+	queue.PushBack(10)
+	queue.PushBack(20)
+	queue.PushBack(30)
+	queue.PushBack(40)
+	queue.PushBack(50)
+
+	printList(queue)
+
+	reverseKElements(queue, 3)
+
+	printList(queue)
+}
+
 func printList(list *list.List) {
 	fmt.Print("[ ")
 	for e := list.Front(); e != nil; e = e.Next() {
