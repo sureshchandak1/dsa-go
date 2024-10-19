@@ -1,16 +1,9 @@
-package main
+package string
 
 import (
 	"bytes"
-	"fmt"
 	"strconv"
 )
-
-func main() {
-	fmt.Println(addStrings("11", "123"))
-	fmt.Println(addStrings("456", "77"))
-	fmt.Println(addStrings("0", "0"))
-}
 
 func addStrings(num1 string, num2 string) string {
 
