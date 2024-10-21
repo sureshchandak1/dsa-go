@@ -50,3 +50,9 @@ func TestTreeBalanced(t *testing.T) {
 	root := buildTreeString("10 20 30 40 60 N N N N 50 N N")
 	fmt.Println(isBalancedTree(root).isBalanced)
 }
+
+func TestIdenticalTrees(t *testing.T) {
+	root1 := buildTreeString("10 20 30 40 60 N N N N 50 N N")
+	root2 := buildTreeString("10 20 30 40 60 N N N N 50 N N")
+	fmt.Println(identicalTrees(root1, root2))
+}
