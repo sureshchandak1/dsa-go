@@ -45,3 +45,8 @@ func TestTreeDiameter(t *testing.T) {
 	root := buildTreeString("10 20 30 40 60 N N N N 50 N N")
 	fmt.Println(treeDiameter(root).diameter)
 }
+
+func TestTreeBalanced(t *testing.T) {
+	root := buildTreeString("10 20 30 40 60 N N N N 50 N N")
+	fmt.Println(isBalancedTree(root).isBalanced)
+}
