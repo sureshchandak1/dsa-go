@@ -35,3 +35,13 @@ func TestCountLeafNodes(t *testing.T) {
 	fmt.Println(countLeafNodes(root))
 	fmt.Println(inorderCountLeafNodes(root, 0))
 }
+
+func TestTreeHeight(t *testing.T) {
+	root := buildTreeString("10 20 30 40 60 N N N N 50 N N")
+	fmt.Println(treeHeight(root))
+}
+
+func TestTreeDiameter(t *testing.T) {
+	root := buildTreeString("10 20 30 40 60 N N N N 50 N N")
+	fmt.Println(treeDiameter(root).diameter)
+}
