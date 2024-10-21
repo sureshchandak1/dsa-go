@@ -56,3 +56,8 @@ func TestIdenticalTrees(t *testing.T) {
 	root2 := buildTreeString("10 20 30 40 60 N N N N 50 N N")
 	fmt.Println(identicalTrees(root1, root2))
 }
+
+func TestIsSumTree(t *testing.T) {
+	root := buildTreeString("10 20 30 40 60 N N N N 50 N N")
+	fmt.Println(isSumTree(root).isSumTree)
+}
