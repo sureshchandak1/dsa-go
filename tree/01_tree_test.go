@@ -61,3 +61,8 @@ func TestIsSumTree(t *testing.T) {
 	root := buildTreeString("10 20 30 40 60 N N N N 50 N N")
 	fmt.Println(isSumTree(root).isSumTree)
 }
+
+func TestZigZagTraversal(t *testing.T) {
+	root := buildTreeString("10 20 30 40 60 N N N N 50 N N")
+	fmt.Println(zigZagTraversal(root))
+}
