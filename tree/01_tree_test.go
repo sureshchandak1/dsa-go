@@ -96,3 +96,13 @@ func TestBinaryTreeRightView(t *testing.T) {
 	root := buildTreeString("10 20 30 40 60 N N N N 50 N N")
 	fmt.Println(binaryTreeRightView(root))
 }
+
+func TestSumOfLongRootToLeafPath(t *testing.T) {
+	root := buildTreeString("10 20 30 40 60 N N N N 50 N N")
+	fmt.Println(sumOfLongRootToLeafPath(root))
+}
+
+func TestSumRootToLeaf(t *testing.T) {
+	root := buildTreeString("10 20 30 40 60 N N N N 50 N N")
+	fmt.Println(sumRootToLeaf(root))
+}
