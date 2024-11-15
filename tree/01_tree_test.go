@@ -91,3 +91,8 @@ func TestBinaryTreeLeftView(t *testing.T) {
 	root := buildTreeString("10 20 30 40 60 N N N N 50 N N")
 	fmt.Println(binaryTreeLeftView(root))
 }
+
+func TestBinaryTreeRightView(t *testing.T) {
+	root := buildTreeString("10 20 30 40 60 N N N N 50 N N")
+	fmt.Println(binaryTreeRightView(root))
+}
