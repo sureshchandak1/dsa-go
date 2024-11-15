@@ -106,3 +106,11 @@ func TestSumRootToLeaf(t *testing.T) {
 	root := buildTreeString("10 20 30 40 60 N N N N 50 N N")
 	fmt.Println(sumRootToLeaf(root))
 }
+
+func TestLowestCommonAncestor(t *testing.T) {
+	root := buildTreeString("10 20 30 40 60 N N N N 50 N N")
+	result := lowestCommonAncestor(root, &TreeNode{Data: 40}, &TreeNode{Data: 50})
+	if result != nil {
+		fmt.Println(result.Data)
+	}
+}
