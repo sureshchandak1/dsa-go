@@ -119,3 +119,8 @@ func TestPathSum(t *testing.T) {
 	root := buildTreeString("10 20 30 40 60 N N N N 50 N N")
 	fmt.Println(pathSum(root, 140))
 }
+
+func TestGetKthAncestor(t *testing.T) {
+	root := buildTreeString("10 20 30 40 60 N N N N 50 N N")
+	fmt.Println(getKthAncestor(root, 2, 50))
+}
