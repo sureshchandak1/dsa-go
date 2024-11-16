@@ -114,3 +114,8 @@ func TestLowestCommonAncestor(t *testing.T) {
 		fmt.Println(result.Data)
 	}
 }
+
+func TestPathSum(t *testing.T) {
+	root := buildTreeString("10 20 30 40 60 N N N N 50 N N")
+	fmt.Println(pathSum(root, 140))
+}
