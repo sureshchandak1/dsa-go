@@ -134,3 +134,8 @@ func TestBuildBinaryTreeFromPreorderInorder(t *testing.T) {
 	root := buildBinaryTreeFromPreorderInorder([]int{3, 1, 4, 0, 5, 2}, []int{0, 1, 3, 4, 2, 5})
 	postOrderTraversal(root)
 }
+
+func TestBuildBinaryTreeFromPostorderInorder(t *testing.T) {
+	root := buildBinaryTreeFromPostorderInorder([]int{9, 3, 15, 20, 7}, []int{9, 15, 7, 20, 3})
+	preOrderTraversal(root)
+}
