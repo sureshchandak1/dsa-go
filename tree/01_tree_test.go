@@ -129,3 +129,8 @@ func TestMaximumSumOfNodes(t *testing.T) {
 	root := buildTreeString("10 20 30 40 60 N N N N 50 N N")
 	fmt.Println(maximumSumOfNodes(root))
 }
+
+func TestBuildBinaryTreeFromPreorderInorder(t *testing.T) {
+	root := buildBinaryTreeFromPreorderInorder([]int{3, 1, 4, 0, 5, 2}, []int{0, 1, 3, 4, 2, 5})
+	postOrderTraversal(root)
+}
