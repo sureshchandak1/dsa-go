@@ -1,5 +1,11 @@
 package tree
 
+/**
+
+https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/
+
+*/
+
 func buildBinaryTreeFromPreorderInorder(inorder []int, preorder []int) *TreeNode {
 
 	mapping := make(map[int]int)

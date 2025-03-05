@@ -5,6 +5,15 @@ import (
 	"testing"
 )
 
+func TestSortPackage(t *testing.T) {
+	arr := []int{10, 1, 4, 6, 12, 50, 70, 0, -1, 4}
+	fmt.Println(arr)
+	sortIntArray(arr, true)
+	fmt.Println(arr)
+	sortIntArray(arr, false)
+	fmt.Println(arr)
+}
+
 func TestSelectionSort(t *testing.T) {
 	fmt.Println("----------Selection Sort----------")
 

@@ -139,3 +139,9 @@ func TestBuildBinaryTreeFromPostorderInorder(t *testing.T) {
 	root := buildBinaryTreeFromPostorderInorder([]int{9, 3, 15, 20, 7}, []int{9, 15, 7, 20, 3})
 	preOrderTraversal(root)
 }
+
+func TestBurnTree(t *testing.T) {
+	root := buildTreeString("10 20 30 40 60 N N N N 50 N N")
+	result := minTimeToBurnTree(root, 40)
+	fmt.Println(result)
+}
