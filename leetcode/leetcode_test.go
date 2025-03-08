@@ -21,3 +21,12 @@ func TestFindMissingAndRepeatedValues(t *testing.T) {
 	}
 	fmt.Println(findMissingAndRepeatedValues(grid))
 }
+func TestClosestPrimes(t *testing.T) {
+	fmt.Println(closestPrimes(10, 19))
+	fmt.Println(closestPrimes(4, 6))
+}
+
+func TestMinimumRecolors(t *testing.T) {
+	fmt.Println(minimumRecolors("WBBWWBBWBW", 7))
+	fmt.Println(minimumRecolors("WBWBBBW", 2))
+}

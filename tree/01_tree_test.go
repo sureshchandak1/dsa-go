@@ -152,3 +152,11 @@ func TestMorrisTraversal(t *testing.T) {
 	fmt.Println(result)
 	inorderTraversal(root)
 }
+
+func TestFlattenTree(t *testing.T) {
+	root := buildTreeString("10 20 30 40 60 N N N N 50 N N")
+	inorderTraversal(root)
+	flattenTree(root)
+	fmt.Println()
+	inorderTraversal(root)
+}
