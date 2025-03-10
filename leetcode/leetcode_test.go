@@ -30,3 +30,15 @@ func TestMinimumRecolors(t *testing.T) {
 	fmt.Println(minimumRecolors("WBBWWBBWBW", 7))
 	fmt.Println(minimumRecolors("WBWBBBW", 2))
 }
+
+func TestNumberOfAlternatingGroups(t *testing.T) {
+	fmt.Println(numberOfAlternatingGroups([]int{0, 1, 0, 1, 0}, 3))
+	fmt.Println(numberOfAlternatingGroups([]int{0, 1, 0, 0, 1, 0, 1}, 6))
+	fmt.Println(numberOfAlternatingGroups([]int{1, 1, 0, 1}, 4))
+}
+
+func TestCountOfSubstrings(t *testing.T) {
+	fmt.Println(countOfSubstrings("aeioqq", 1))
+	fmt.Println(countOfSubstrings("aeiou", 0))
+	fmt.Println(countOfSubstrings("ieaouqqieaouqq", 1))
+}
