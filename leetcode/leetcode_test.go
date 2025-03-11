@@ -42,3 +42,9 @@ func TestCountOfSubstrings(t *testing.T) {
 	fmt.Println(countOfSubstrings("aeiou", 0))
 	fmt.Println(countOfSubstrings("ieaouqqieaouqq", 1))
 }
+
+func TestNumberOfSubstrings(t *testing.T) {
+	fmt.Println(numberOfSubstrings("abcabc"))
+	fmt.Println(numberOfSubstrings("aaacb"))
+	fmt.Println(numberOfSubstrings("abc"))
+}
