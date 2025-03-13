@@ -34,3 +34,16 @@ func TestChocolateDistribution(t *testing.T) {
 	fmt.Println(chocolateDistribution([]int{3, 4, 1, 9, 56, 7, 9, 12}, 5))
 	fmt.Println(chocolateDistribution([]int{1, 5, 4, 2, 9, 1, 2}, 3))
 }
+
+func TestSmallestSubarrayGreaterX(t *testing.T) {
+	fmt.Println(smallestSubarrayGreaterX([]int{1, 4, 45, 6, 0, 19}, 51))
+	fmt.Println(smallestSubarrayGreaterX([]int{3, 4, 1, 9, 56, 7, 9, 12}, 15))
+	fmt.Println(smallestSubarrayGreaterX([]int{1, 5, 4, 2, 9, 1, 2}, 13))
+}
+
+func TestLongestKUniqueSubStr(t *testing.T) {
+	fmt.Println(longestKUniqueSubStr("aabacbebebe", 3))
+	fmt.Println(longestKUniqueSubStr("sgfasafsfdsfsfaffa", 2))
+	fmt.Println(longestKUniqueSubStr("fhdfgerthgasdgas", 3))
+	fmt.Println(longestKUniqueSubStr("", 3))
+}
