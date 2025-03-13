@@ -29,3 +29,8 @@ func TestFirstNegativeNumberK(t *testing.T) {
 	fmt.Println(firstNegativeNumberK([]int{12, -1, -7, 8, -15, 30, 16, 28}, 3))
 	fmt.Println(firstNegativeNumberK([]int{12, 1, 3, 5}, 3))
 }
+
+func TestChocolateDistribution(t *testing.T) {
+	fmt.Println(chocolateDistribution([]int{3, 4, 1, 9, 56, 7, 9, 12}, 5))
+	fmt.Println(chocolateDistribution([]int{1, 5, 4, 2, 9, 1, 2}, 3))
+}

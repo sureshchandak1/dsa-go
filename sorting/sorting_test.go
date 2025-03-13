@@ -14,6 +14,17 @@ func TestSortPackage(t *testing.T) {
 	fmt.Println(arr)
 }
 
+func TestSort2dArray(t *testing.T) {
+	matrix := [][]int{
+		{2, 3, 1},
+		{6, 3, 5},
+		{1, 4, 9},
+	}
+	fmt.Println(matrix)
+	sort2dArray(matrix)
+	fmt.Println(matrix)
+}
+
 func TestSelectionSort(t *testing.T) {
 	fmt.Println("----------Selection Sort----------")
 
