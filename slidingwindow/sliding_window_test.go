@@ -62,3 +62,9 @@ func TestCountAnagramOccurences(t *testing.T) {
 	fmt.Println(countAnagramOccurences("forxxorfxdofr", "for"))
 	fmt.Println(countAnagramOccurences("aabaabaa", "aaba"))
 }
+
+func TestMinimumWindowSubstring(t *testing.T) {
+	fmt.Println(minimumWindowSubstring("ADOBECODEBANC", "ABC"))
+	fmt.Println(minimumWindowSubstring("a", "a"))
+	fmt.Println(minimumWindowSubstring("a", "aa"))
+}
