@@ -57,3 +57,8 @@ func TestLengthOfLongestSubstring(t *testing.T) {
 	fmt.Println(lengthOfLongestSubstringOptimized("bbbbb"))
 	fmt.Println(lengthOfLongestSubstringOptimized("pwwkew"))
 }
+
+func TestCountAnagramOccurences(t *testing.T) {
+	fmt.Println(countAnagramOccurences("forxxorfxdofr", "for"))
+	fmt.Println(countAnagramOccurences("aabaabaa", "aaba"))
+}
