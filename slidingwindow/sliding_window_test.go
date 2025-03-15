@@ -47,3 +47,13 @@ func TestLongestKUniqueSubStr(t *testing.T) {
 	fmt.Println(longestKUniqueSubStr("fhdfgerthgasdgas", 3))
 	fmt.Println(longestKUniqueSubStr("", 3))
 }
+
+func TestLengthOfLongestSubstring(t *testing.T) {
+	fmt.Println(lengthOfLongestSubstring1("abcabcbb"))
+	fmt.Println(lengthOfLongestSubstring1("bbbbb"))
+	fmt.Println(lengthOfLongestSubstring1("pwwkew"))
+	fmt.Println()
+	fmt.Println(lengthOfLongestSubstringOptimized("abcabcbb"))
+	fmt.Println(lengthOfLongestSubstringOptimized("bbbbb"))
+	fmt.Println(lengthOfLongestSubstringOptimized("pwwkew"))
+}
