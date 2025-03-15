@@ -68,3 +68,9 @@ func TestMinimumWindowSubstring(t *testing.T) {
 	fmt.Println(minimumWindowSubstring("a", "a"))
 	fmt.Println(minimumWindowSubstring("a", "aa"))
 }
+
+func TestMaxSlidingWindow(t *testing.T) {
+	fmt.Println(maxSlidingWindow([]int{1, 3, -1, -3, 5, 3, 6, 7}, 3))
+	fmt.Println(maxSlidingWindow([]int{1}, 1))
+	fmt.Println(maxSlidingWindow([]int{-7, -8, 7, 5, 7, 1, 6, 0}, 4))
+}
