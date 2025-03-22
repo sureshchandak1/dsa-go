@@ -19,3 +19,9 @@ func TestCountCompleteComponents(t *testing.T) {
 	fmt.Println(countCompleteComponents(6, [][]int{{0, 1}, {0, 2}, {1, 2}, {3, 4}, {3, 5}}))
 	fmt.Println(countCompleteComponents(5, [][]int{{1, 2}, {3, 4}, {1, 4}, {2, 3}, {1, 3}, {2, 4}}))
 }
+
+func TestFindAllRecipes(t *testing.T) {
+	fmt.Println(findAllRecipes([]string{"bread"}, [][]string{{"yeast", "flour"}}, []string{"yeast", "flour", "corn"}))
+	fmt.Println(findAllRecipes([]string{"bread", "sandwich"}, [][]string{{"yeast", "flour"}, {"bread", "meat"}}, []string{"yeast", "flour", "meat"}))
+	fmt.Println(findAllRecipes([]string{"bread", "sandwich", "burger"}, [][]string{{"yeast", "flour"}, {"bread", "meat"}, {"sandwich", "meat", "bread"}}, []string{"yeast", "flour", "meat"}))
+}
