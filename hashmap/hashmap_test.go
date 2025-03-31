@@ -26,3 +26,19 @@ func TestFindMinNumberOfSets(t *testing.T) {
 	fmt.Println(findMinNumberOfSets1([]int{2, 1, 4, 1, 6, 5, 5, 5}))
 	fmt.Println(findMinNumberOfSets2([]int{2, 1, 4, 1, 6, 5, 5, 5}))
 }
+
+func TestCheckSumSubarray(t *testing.T) {
+	fmt.Print(checkSumSubarray([]int{2, 8, 2, 6, -6, 3, 2}, 5))
+}
+
+func TestFindKSumSubarray(t *testing.T) {
+	fmt.Print(findKSumSubarray([]int{2, 8, 2, 6, -6, 3, 2}, 5))
+}
+
+func TestFindLongestKSumSubarray(t *testing.T) {
+	fmt.Print(findLongestKSumSubarray([]int{2, 8, 2, 6, -6, 3, 2}, 5))
+}
+
+func TestFindKSumSubarrayCount(t *testing.T) {
+	fmt.Print(findKSumSubarrayCount([]int{2, 8, 2, 6, -6, 3, 2}, 5))
+}
