@@ -28,17 +28,22 @@ func TestFindMinNumberOfSets(t *testing.T) {
 }
 
 func TestCheckSumSubarray(t *testing.T) {
-	fmt.Print(checkSumSubarray([]int{2, 8, 2, 6, -6, 3, 2}, 5))
+	fmt.Println(checkSumSubarray([]int{2, 8, 2, 6, -6, 3, 2}, 5))
 }
 
 func TestFindKSumSubarray(t *testing.T) {
-	fmt.Print(findKSumSubarray([]int{2, 8, 2, 6, -6, 3, 2}, 5))
+	fmt.Println(findKSumSubarray([]int{2, 8, 2, 6, -6, 3, 2}, 5))
 }
 
 func TestFindLongestKSumSubarray(t *testing.T) {
-	fmt.Print(findLongestKSumSubarray([]int{2, 8, 2, 6, -6, 3, 2}, 5))
+	fmt.Println(findLongestKSumSubarray([]int{2, 8, 2, 6, -6, 3, 2}, 5))
 }
 
 func TestFindKSumSubarrayCount(t *testing.T) {
-	fmt.Print(findKSumSubarrayCount([]int{2, 8, 2, 6, -6, 3, 2}, 5))
+	fmt.Println(findKSumSubarrayCount([]int{2, 8, 2, 6, -6, 3, 2}, 5))
+}
+
+func TestLongSubarraySumDivByK(t *testing.T) {
+	fmt.Println(longSubarraySumDivByK([]int{2, 7, 6, 1, 4, 5}, 3))
+	fmt.Println(longSubarraySumDivByK([]int{1, 2, -2, 2, 2}, 2))
 }
