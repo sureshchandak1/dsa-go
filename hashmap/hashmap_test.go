@@ -47,3 +47,13 @@ func TestLongSubarraySumDivByK(t *testing.T) {
 	fmt.Println(longSubarraySumDivByK([]int{2, 7, 6, 1, 4, 5}, 3))
 	fmt.Println(longSubarraySumDivByK([]int{1, 2, -2, 2, 2}, 2))
 }
+
+func TestLongestConsecutive(t *testing.T) {
+	fmt.Println(longestConsecutive1([]int{100, 4, 200, 1, 3, 2}))
+	fmt.Println(longestConsecutive1([]int{0, 3, 7, 2, 5, 8, 4, 6, 0, 1}))
+	fmt.Println(longestConsecutive1([]int{1, 0, 1, 2}))
+	fmt.Println()
+	fmt.Println(longestConsecutive2([]int{100, 4, 200, 1, 3, 2}))
+	fmt.Println(longestConsecutive2([]int{0, 3, 7, 2, 5, 8, 4, 6, 0, 1}))
+	fmt.Println(longestConsecutive2([]int{1, 0, 1, 2}))
+}
