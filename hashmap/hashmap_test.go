@@ -61,3 +61,7 @@ func TestLongestConsecutive(t *testing.T) {
 func TestLargestSubarray0and1(t *testing.T) {
 	fmt.Println(largestSubarray0and1([]int{0, 1, 0, 1}))
 }
+
+func TestBucketSort(t *testing.T) {
+	fmt.Println(bucketSort([]float64{0.78, 0.17, 0.39, 0.26, 0.72, 0.94, 0.21, 0.12, 0.23, 0.68}))
+}
