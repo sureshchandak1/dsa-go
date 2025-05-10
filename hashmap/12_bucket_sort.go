@@ -23,9 +23,9 @@ func bucketSort(arr []float64) []float64 {
 
 	// Create bucket list
 	buckets := make([][]float64, bucketSize)
-	for i := range bucketSize {
-		buckets[i] = []float64{}
-	}
+	// for i := range bucketSize {
+	// 	buckets[i] = []float64{}
+	// }
 
 	// Insert elements into the bucket
 	for _, val := range arr {
