@@ -18,3 +18,9 @@ func TestMinCostClimbingStairs(t *testing.T) {
 	fmt.Println(minCostClimbingStairs([]int{10, 15, 20}))
 	fmt.Println(minCostClimbingStairs([]int{1, 100, 1, 1, 1, 100, 1, 1, 100, 1}))
 }
+
+func TestMinimumNumberCoins(t *testing.T) {
+	fmt.Println(coinChange([]int{1, 2, 5}, 11))
+	fmt.Println(coinChange([]int{2}, 3))
+	fmt.Println(coinChange([]int{1}, 0))
+}
