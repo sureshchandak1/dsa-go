@@ -24,3 +24,7 @@ func TestMinimumNumberCoins(t *testing.T) {
 	fmt.Println(coinChange([]int{2}, 3))
 	fmt.Println(coinChange([]int{1}, 0))
 }
+
+func TestMaxSumNonAdjacentElements(t *testing.T) {
+	fmt.Println(maxSumNonAdjacentElements([]int{1, 2, 5, 4, 5, 6, 9, 10}))
+}
