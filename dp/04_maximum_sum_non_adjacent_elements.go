@@ -10,7 +10,9 @@ func maxSumNonAdjacentElements(nums []int) int {
 	// dp := slices.Repeat([]int{-1}, n+1)
 	// return solveMaxSumNonAdjacentElementsDP(nums, n-1, dp)
 
-	return solveMaxSumNonAdjacentElementsTab(nums)
+	// return solveMaxSumNonAdjacentElementsTab(nums)
+
+	return solveMaxSumNonAdjacentElementsOp(nums)
 }
 
 // Recursion
@@ -79,5 +81,32 @@ func solveMaxSumNonAdjacentElementsTab(nums []int) int {
 	}
 
 	return dp[n-1]
+
+}
+
+// Optimized
+func solveMaxSumNonAdjacentElementsOp(nums []int) int {
+
+	n := len(nums)
+
+	prev2 := 0
+	prev1 := nums[0]
+
+	for i := 1; i < n; i++ {
+		incl, excl := 0, 0
+
+		if i-2 >= 0 {
+			incl = prev2 + nums[i]
+		}
+
+		excl = prev1
+
+		ans := max(incl, excl)
+
+		prev2 = prev1
+		prev1 = ans
+	}
+
+	return prev1
 
 }
