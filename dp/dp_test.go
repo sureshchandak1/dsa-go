@@ -47,3 +47,10 @@ func TestCutSegments(t *testing.T) {
 	fmt.Println(cutSegments(7, 3, 2, 2))
 	fmt.Println(cutSegments(8, 1, 4, 4))
 }
+
+func TestCountDerangements(t *testing.T) {
+	fmt.Println(countDerangements(2))
+	fmt.Println(countDerangements(3))
+	fmt.Println(countDerangements(1))
+	fmt.Println(countDerangements(4))
+}
