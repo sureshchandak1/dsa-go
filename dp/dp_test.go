@@ -40,3 +40,10 @@ func TestRobMoney1(t *testing.T) {
 	fmt.Println(rob2([]int{2, 7, 9, 3, 1}))
 	fmt.Println(rob2([]int{1, 2}))
 }
+
+func TestCutSegments(t *testing.T) {
+	fmt.Println(cutSegments(7, 5, 2, 2))
+	fmt.Println(cutSegments(8, 3, 3, 3))
+	fmt.Println(cutSegments(7, 3, 2, 2))
+	fmt.Println(cutSegments(8, 1, 4, 4))
+}
