@@ -95,9 +95,7 @@ func solveMaxSumNonAdjacentElementsOp(nums []int) int {
 	for i := 1; i < n; i++ {
 		incl, excl := 0, 0
 
-		if i-2 >= 0 {
-			incl = prev2 + nums[i]
-		}
+		incl = prev2 + nums[i]
 
 		excl = prev1
 
