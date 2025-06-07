@@ -54,3 +54,10 @@ func TestCountDerangements(t *testing.T) {
 	fmt.Println(countDerangements(1))
 	fmt.Println(countDerangements(4))
 }
+
+func TestNumberOfWaysPaint(t *testing.T) {
+	fmt.Println(numberOfWaysPaint(1, 1))
+	fmt.Println(numberOfWaysPaint(3, 2))
+	fmt.Println(numberOfWaysPaint(2, 4))
+	fmt.Println(numberOfWaysPaint(4, 2))
+}
