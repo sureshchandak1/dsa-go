@@ -71,3 +71,10 @@ func TestKnapsack(t *testing.T) {
 	value = []int{1, 13, 75, 46, 87, 98, 31, 91, 23, 43, 85, 18, 35, 1, 83, 26, 77, 91, 85, 76, 74, 65, 35, 36, 98, 42, 37, 83, 54}
 	fmt.Println(knapsack(weight, value, len(weight), 424))
 }
+
+func TestTargetSumWaysRes(t *testing.T) {
+	fmt.Println(targetSumWaysRes([]int{1, 2, 3}, 4))
+	fmt.Println(targetSumWaysRes([]int{9}, 3))
+	fmt.Println(targetSumWaysRes([]int{1, 2, 5}, 5))
+	fmt.Println(targetSumWaysRes([]int{1, 2, 5}, 6))
+}
