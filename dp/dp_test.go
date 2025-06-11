@@ -72,9 +72,15 @@ func TestKnapsack(t *testing.T) {
 	fmt.Println(knapsack(weight, value, len(weight), 424))
 }
 
-func TestTargetSumWaysRes(t *testing.T) {
-	fmt.Println(targetSumWaysRes([]int{1, 2, 3}, 4))
-	fmt.Println(targetSumWaysRes([]int{9}, 3))
-	fmt.Println(targetSumWaysRes([]int{1, 2, 5}, 5))
-	fmt.Println(targetSumWaysRes([]int{1, 2, 5}, 6))
+func TestTargetSumWays(t *testing.T) {
+	fmt.Println(targetSumWays([]int{1, 2, 3}, 4))
+	fmt.Println(targetSumWays([]int{9}, 3))
+	fmt.Println(targetSumWays([]int{1, 2, 5}, 5))
+	fmt.Println(targetSumWays([]int{1, 2, 5}, 6))
+}
+
+func TestPerfectSquares(t *testing.T) {
+	fmt.Println(perfectSquares(12))
+	fmt.Println(perfectSquares(13))
+	fmt.Println(perfectSquares(10000))
 }
