@@ -92,3 +92,9 @@ func TestMinCostTickets(t *testing.T) {
 	fmt.Println(minCostTicketsOptimized([]int{1, 4, 6, 7, 8, 20}, []int{2, 7, 15}))
 	fmt.Println(minCostTicketsOptimized([]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 30, 31}, []int{2, 7, 15}))
 }
+
+func TestMaxSquare(t *testing.T) {
+	fmt.Println(maxSquare([][]int{{1, 1}, {1, 1}}))
+	fmt.Println(maxSquare([][]int{{0, 0}, {0, 0}}))
+	fmt.Println(maxSquare([][]int{{0, 1, 1, 0, 1}, {1, 1, 0, 1, 0}, {0, 1, 1, 1, 0}, {1, 1, 1, 1, 0}, {1, 1, 1, 1, 1}, {0, 0, 0, 0, 0}}))
+}
