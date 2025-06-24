@@ -98,3 +98,9 @@ func TestMaxSquare(t *testing.T) {
 	fmt.Println(maxSquare([][]int{{0, 0}, {0, 0}}))
 	fmt.Println(maxSquare([][]int{{0, 1, 1, 0, 1}, {1, 1, 0, 1, 0}, {0, 1, 1, 1, 0}, {1, 1, 1, 1, 0}, {1, 1, 1, 1, 1}, {0, 0, 0, 0, 0}}))
 }
+
+func TestMinScoreTriangulation(t *testing.T) {
+	fmt.Println(minScoreTriangulation([]int{1, 2, 3}))
+	fmt.Println(minScoreTriangulation([]int{3, 7, 4, 5}))
+	fmt.Println(minScoreTriangulation([]int{1, 3, 1, 4, 1, 5}))
+}
