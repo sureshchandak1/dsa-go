@@ -104,3 +104,10 @@ func TestMinScoreTriangulation(t *testing.T) {
 	fmt.Println(minScoreTriangulation([]int{3, 7, 4, 5}))
 	fmt.Println(minScoreTriangulation([]int{1, 3, 1, 4, 1, 5}))
 }
+
+func TestMinSideJumps(t *testing.T) {
+	fmt.Println(minSideJumps([]int{0, 1, 2, 3, 0}))
+	fmt.Println(minSideJumps([]int{0, 1, 1, 3, 3, 0}))
+	fmt.Println(minSideJumps([]int{0, 2, 1, 0, 3, 0}))
+
+}
