@@ -109,5 +109,11 @@ func TestMinSideJumps(t *testing.T) {
 	fmt.Println(minSideJumps([]int{0, 1, 2, 3, 0}))
 	fmt.Println(minSideJumps([]int{0, 1, 1, 3, 3, 0}))
 	fmt.Println(minSideJumps([]int{0, 2, 1, 0, 3, 0}))
+}
+
+func TestMaxSatisfaction(t *testing.T) {
+	fmt.Println(maxSatisfaction([]int{-1, -8, 0, 5, -7}))
+	fmt.Println(maxSatisfaction([]int{4, 3, 2}))
+	fmt.Println(maxSatisfaction([]int{-1, -4, -5}))
 
 }
