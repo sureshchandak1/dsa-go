@@ -117,3 +117,10 @@ func TestMaxSatisfaction(t *testing.T) {
 	fmt.Println(maxSatisfaction([]int{-1, -4, -5}))
 
 }
+
+func TestLengthOfLIS(t *testing.T) {
+	fmt.Println(lengthOfLIS([]int{10, 9, 2, 5, 3, 7, 101, 18}))
+	fmt.Println(lengthOfLIS([]int{0, 1, 0, 3, 2, 3}))
+	fmt.Println(lengthOfLIS([]int{7, 7, 7, 7, 7, 7, 7}))
+
+}
