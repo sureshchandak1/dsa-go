@@ -115,12 +115,15 @@ func TestMaxSatisfaction(t *testing.T) {
 	fmt.Println(maxSatisfaction([]int{-1, -8, 0, 5, -7}))
 	fmt.Println(maxSatisfaction([]int{4, 3, 2}))
 	fmt.Println(maxSatisfaction([]int{-1, -4, -5}))
-
 }
 
 func TestLengthOfLIS(t *testing.T) {
 	fmt.Println(lengthOfLIS([]int{10, 9, 2, 5, 3, 7, 101, 18}))
 	fmt.Println(lengthOfLIS([]int{0, 1, 0, 3, 2, 3}))
 	fmt.Println(lengthOfLIS([]int{7, 7, 7, 7, 7, 7, 7}))
+}
 
+func TestMaxEnvelopes(t *testing.T) {
+	fmt.Println(maxEnvelopes([][]int{{5, 4}, {6, 4}, {6, 7}, {2, 3}}))
+	fmt.Println(maxEnvelopes([][]int{{1, 1}, {1, 1}, {1, 1}}))
 }
