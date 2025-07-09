@@ -127,3 +127,9 @@ func TestMaxEnvelopes(t *testing.T) {
 	fmt.Println(maxEnvelopes([][]int{{5, 4}, {6, 4}, {6, 7}, {2, 3}}))
 	fmt.Println(maxEnvelopes([][]int{{1, 1}, {1, 1}, {1, 1}}))
 }
+
+func TestMaxCuboidsHeight(t *testing.T) {
+	fmt.Println(maxCuboidsHeight([][]int{{50, 45, 20}, {95, 37, 53}, {45, 23, 12}}))
+	fmt.Println(maxCuboidsHeight([][]int{{38, 25, 45}, {76, 35, 3}}))
+	fmt.Println(maxCuboidsHeight([][]int{{7, 11, 17}, {7, 17, 11}, {11, 7, 17}, {11, 17, 7}, {17, 7, 11}, {17, 11, 7}}))
+}
