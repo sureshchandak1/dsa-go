@@ -133,3 +133,10 @@ func TestMaxCuboidsHeight(t *testing.T) {
 	fmt.Println(maxCuboidsHeight([][]int{{38, 25, 45}, {76, 35, 3}}))
 	fmt.Println(maxCuboidsHeight([][]int{{7, 11, 17}, {7, 17, 11}, {11, 7, 17}, {11, 17, 7}, {17, 7, 11}, {17, 11, 7}}))
 }
+
+func TestMaxSizeSlices(t *testing.T) {
+	fmt.Println(maxSizeSlices([]int{1, 2, 3, 4, 5, 6}))
+	fmt.Println(maxSizeSlices([]int{8, 9, 8, 6, 1, 1}))
+	fmt.Println(maxSizeSlices([]int{9, 5, 1, 7, 8, 4, 4, 5, 5, 8, 7, 7}))
+	fmt.Println(maxSizeSlices([]int{7, 8, 5, 6, 9, 10, 1, 6, 5, 10, 8, 10, 5, 4, 7, 2, 8, 5, 9, 7, 5, 9, 3, 7, 7, 2, 2, 10, 7, 6, 4, 6, 5, 7, 7, 9, 6, 8, 10, 7, 5, 7, 2, 5, 4, 9, 6, 10, 10, 2, 10}))
+}
