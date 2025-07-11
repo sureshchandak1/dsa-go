@@ -140,3 +140,11 @@ func TestMaxSizeSlices(t *testing.T) {
 	fmt.Println(maxSizeSlices([]int{9, 5, 1, 7, 8, 4, 4, 5, 5, 8, 7, 7}))
 	fmt.Println(maxSizeSlices([]int{7, 8, 5, 6, 9, 10, 1, 6, 5, 10, 8, 10, 5, 4, 7, 2, 8, 5, 9, 7, 5, 9, 3, 7, 7, 2, 2, 10, 7, 6, 4, 6, 5, 7, 7, 9, 6, 8, 10, 7, 5, 7, 2, 5, 4, 9, 6, 10, 10, 2, 10}))
 }
+
+func TestNoOfWays(t *testing.T) {
+	fmt.Println(noOfWays(6, 3, 12))
+	fmt.Println(noOfWays(2, 3, 6))
+	fmt.Println(noOfWays(6, 1, 3))
+	fmt.Println(noOfWays(6, 2, 7))
+	fmt.Println(noOfWays(30, 30, 500))
+}
