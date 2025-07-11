@@ -148,3 +148,9 @@ func TestNoOfWays(t *testing.T) {
 	fmt.Println(noOfWays(6, 2, 7))
 	fmt.Println(noOfWays(30, 30, 500))
 }
+
+func TestEqualPartition(t *testing.T) {
+	fmt.Println(equalPartition([]int{1, 5, 11, 5}))
+	fmt.Println(equalPartition([]int{1, 3, 5}))
+	fmt.Println(equalPartition([]int{1, 2, 3, 5}))
+}
