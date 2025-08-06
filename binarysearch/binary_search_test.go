@@ -39,3 +39,12 @@ func TestFloorAndCeil(t *testing.T) {
 	fmt.Println(findCeil(arr, 1))
 	fmt.Println(findCeilLetter([]byte{'x', 'x', 'y', 'y'}, 'z'))
 }
+
+func TestMinimumAbsoluteDifference(t *testing.T) {
+	arr := []int{2, 4, 8, 13, 15, 17, 19}
+	fmt.Println(minAbsoluteDiff1(arr, 12))
+	fmt.Println(minAbsoluteDiffOptimized(arr, 12))
+	fmt.Println(minAbsoluteDiffOptimized(arr, 13))
+	fmt.Println(minAbsoluteDiffOptimized(arr, 25))
+	fmt.Println(minAbsoluteDiffOptimized(arr, 0))
+}
