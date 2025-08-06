@@ -48,3 +48,15 @@ func TestMinimumAbsoluteDifference(t *testing.T) {
 	fmt.Println(minAbsoluteDiffOptimized(arr, 25))
 	fmt.Println(minAbsoluteDiffOptimized(arr, 0))
 }
+
+func TestBinarySearchInfiniteArr(t *testing.T) {
+	arr := []int{2, 2, 4, 5, 7, 9, 25, 56, 88, 94}
+	fmt.Println(binarySearchInfiniteArr(arr, 25))
+	fmt.Println(binarySearchInfiniteArr(arr, 100))
+}
+
+func TestFindFirstIndexOf1(t *testing.T) {
+	fmt.Println(findFirstIndexOf1([]int{0, 0, 0, 0, 0, 1, 1, 1, 1, 1}))
+	fmt.Println(findFirstIndexOf1([]int{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1}))
+	fmt.Println(findFirstIndexOf1([]int{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}))
+}
