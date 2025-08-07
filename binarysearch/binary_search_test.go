@@ -60,3 +60,11 @@ func TestFindFirstIndexOf1(t *testing.T) {
 	fmt.Println(findFirstIndexOf1([]int{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1}))
 	fmt.Println(findFirstIndexOf1([]int{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}))
 }
+
+func TestBitonicArray(t *testing.T) {
+	arr := []int{2, 4, 6, 8, 11, 16, 13, 11, 9, 3, 2, 1}
+	fmt.Println(minBitonicArray(arr))
+	fmt.Println(peakInBitonicArray(arr))
+	fmt.Println(binarySearchBitonicArray(arr, 16))
+	fmt.Println(binarySearchBitonicArray(arr, 11))
+}
