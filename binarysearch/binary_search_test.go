@@ -68,3 +68,15 @@ func TestBitonicArray(t *testing.T) {
 	fmt.Println(binarySearchBitonicArray(arr, 16))
 	fmt.Println(binarySearchBitonicArray(arr, 11))
 }
+
+func TestRotatedSortedArray(t *testing.T) {
+	fmt.Println(minClockWiseRotated([]int{43, 2, 4, 5, 7, 11}))
+	fmt.Println(maxClockWiseRotated([]int{43, 2, 4, 5, 7, 11}))
+	fmt.Println(maxClockWiseRotated([]int{2, 4, 5, 7, 11, 43}))
+	fmt.Println(minClockWiseRotatedDuplicates([]int{2, 2, 2, 0, 1}))
+	fmt.Println(rotationCountInClockWise([]int{43, 2, 4, 5, 7, 11}))
+	fmt.Println(rotationCountInAntiClockWise([]int{43, 2, 4, 5, 7, 11}))
+	fmt.Println(searchRotatedArray([]int{43, 2, 4, 5, 7, 11}, 11))
+	fmt.Println(searchRotatedArray([]int{43, 2, 4, 5, 7, 11}, 4))
+	fmt.Println(searchRotatedArray([]int{43, 2, 4, 5, 7, 11}, 43))
+}
