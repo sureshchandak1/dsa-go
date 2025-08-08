@@ -80,3 +80,8 @@ func TestRotatedSortedArray(t *testing.T) {
 	fmt.Println(searchRotatedArray([]int{43, 2, 4, 5, 7, 11}, 4))
 	fmt.Println(searchRotatedArray([]int{43, 2, 4, 5, 7, 11}, 43))
 }
+
+func TestBookAllocation(t *testing.T) {
+	fmt.Println(bookAllocation([]int{12, 34, 67, 90}, 2))
+	fmt.Println(bookAllocation([]int{15, 17, 20}, 5))
+}
