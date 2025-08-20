@@ -90,3 +90,8 @@ func TestShipWithinDays(t *testing.T) {
 	fmt.Println(shipWithinDays([]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, 5))
 	fmt.Println(shipWithinDays([]int{3, 2, 2, 4, 1, 4}, 3))
 }
+
+func TestMinKokoEatingSpeed(t *testing.T) {
+	fmt.Println(minKokoEatingSpeed([]int{3, 6, 7, 11}, 8))
+	fmt.Println(minKokoEatingSpeed([]int{30, 11, 23, 4, 20}, 5))
+}
