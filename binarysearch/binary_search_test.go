@@ -85,3 +85,8 @@ func TestBookAllocation(t *testing.T) {
 	fmt.Println(bookAllocation([]int{12, 34, 67, 90}, 2))
 	fmt.Println(bookAllocation([]int{15, 17, 20}, 5))
 }
+
+func TestShipWithinDays(t *testing.T) {
+	fmt.Println(shipWithinDays([]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, 5))
+	fmt.Println(shipWithinDays([]int{3, 2, 2, 4, 1, 4}, 3))
+}
