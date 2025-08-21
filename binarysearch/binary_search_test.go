@@ -95,3 +95,8 @@ func TestMinKokoEatingSpeed(t *testing.T) {
 	fmt.Println(minKokoEatingSpeed([]int{3, 6, 7, 11}, 8))
 	fmt.Println(minKokoEatingSpeed([]int{30, 11, 23, 4, 20}, 5))
 }
+
+func TestSmallestDivisor(t *testing.T) {
+	fmt.Println(smallestDivisor([]int{1, 2, 5, 9}, 6))
+	fmt.Println(smallestDivisor([]int{44, 22, 33, 11, 1}, 5))
+}
