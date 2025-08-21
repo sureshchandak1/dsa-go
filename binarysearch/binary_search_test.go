@@ -100,3 +100,9 @@ func TestSmallestDivisor(t *testing.T) {
 	fmt.Println(smallestDivisor([]int{1, 2, 5, 9}, 6))
 	fmt.Println(smallestDivisor([]int{44, 22, 33, 11, 1}, 5))
 }
+
+func TestMinimizedMaximumDistributed(t *testing.T) {
+	fmt.Println(minimizedMaximumDistributed([]int{11, 6}, 6))
+	fmt.Println(minimizedMaximumDistributed([]int{15, 10, 10}, 7))
+	fmt.Println(minimizedMaximumDistributed([]int{100000}, 1))
+}
