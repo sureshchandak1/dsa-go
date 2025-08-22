@@ -111,3 +111,8 @@ func TestAggressiveCows(t *testing.T) {
 	fmt.Println(aggressiveCows([]int{1, 2, 4, 8, 9}, 3))
 	fmt.Println(aggressiveCows([]int{}, 3))
 }
+
+func TestFindMedianSortedArrays(t *testing.T) {
+	fmt.Println(findMedianSortedArrays([]int{2, 4, 9, 12}, []int{5, 6, 8, 13}))
+	fmt.Println(findMedianSortedArrays([]int{2, 3, 4, 5}, []int{1}))
+}
