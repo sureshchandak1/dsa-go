@@ -106,3 +106,8 @@ func TestMinimizedMaximumDistributed(t *testing.T) {
 	fmt.Println(minimizedMaximumDistributed([]int{15, 10, 10}, 7))
 	fmt.Println(minimizedMaximumDistributed([]int{100000}, 1))
 }
+
+func TestAggressiveCows(t *testing.T) {
+	fmt.Println(aggressiveCows([]int{1, 2, 4, 8, 9}, 3))
+	fmt.Println(aggressiveCows([]int{}, 3))
+}
