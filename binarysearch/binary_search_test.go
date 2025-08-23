@@ -116,3 +116,8 @@ func TestFindMedianSortedArrays(t *testing.T) {
 	fmt.Println(findMedianSortedArrays([]int{2, 4, 9, 12}, []int{5, 6, 8, 13}))
 	fmt.Println(findMedianSortedArrays([]int{2, 3, 4, 5}, []int{1}))
 }
+
+func TestFindKthTwoSortedArrays(t *testing.T) {
+	fmt.Println(findKthTwoSortedArrays([]int{2, 4, 9, 12}, []int{5, 6, 8, 13}, 5))
+	fmt.Println(findKthTwoSortedArrays([]int{2, 3, 4, 5}, []int{1}, 3))
+}
