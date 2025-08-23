@@ -121,3 +121,8 @@ func TestFindKthTwoSortedArrays(t *testing.T) {
 	fmt.Println(findKthTwoSortedArrays([]int{2, 4, 9, 12}, []int{5, 6, 8, 13}, 5))
 	fmt.Println(findKthTwoSortedArrays([]int{2, 3, 4, 5}, []int{1}, 3))
 }
+
+func TestSingleNonDuplicate(t *testing.T) {
+	fmt.Println(singleNonDuplicate([]int{1, 1, 2, 3, 3, 4, 4, 8, 8}))
+	fmt.Println(singleNonDuplicate([]int{3, 3, 7, 7, 10, 11, 11}))
+}
