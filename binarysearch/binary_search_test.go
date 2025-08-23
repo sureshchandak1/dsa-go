@@ -131,3 +131,8 @@ func TestMySqrt(t *testing.T) {
 	fmt.Println(mySqrt(4))
 	fmt.Println(mySqrt(8))
 }
+
+func TestCountSquare(t *testing.T) {
+	fmt.Println(countSquare(9))
+	fmt.Println(countSquare(10))
+}
