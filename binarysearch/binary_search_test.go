@@ -126,3 +126,8 @@ func TestSingleNonDuplicate(t *testing.T) {
 	fmt.Println(singleNonDuplicate([]int{1, 1, 2, 3, 3, 4, 4, 8, 8}))
 	fmt.Println(singleNonDuplicate([]int{3, 3, 7, 7, 10, 11, 11}))
 }
+
+func TestMySqrt(t *testing.T) {
+	fmt.Println(mySqrt(4))
+	fmt.Println(mySqrt(8))
+}
