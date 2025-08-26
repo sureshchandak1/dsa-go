@@ -36,10 +36,10 @@ func addStrings(num1 string, num2 string) string {
 
 	}
 
-	return reverseString(buffer.String())
+	return reverseStr(buffer.String())
 }
 
-func reverseString(str string) string {
+func reverseStr(str string) string {
 
 	runes := []rune(str)
 
