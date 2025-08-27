@@ -33,3 +33,13 @@ func TestReverseWords(t *testing.T) {
 	fmt.Println(reverseWordsOptimized("the sky is blue"))
 	fmt.Println(reverseWordsOptimized("  hello world  "))
 }
+
+func TestIsAnagram(t *testing.T) {
+	fmt.Println(isAnagram("abcd", "dacb"))
+	fmt.Println(isAnagram("abcda", "dacba"))
+	fmt.Println(isAnagram("abcaa", "dacba"))
+}
+
+func TestReverseWords3(t *testing.T) {
+	fmt.Println(reverseWords3("We are Coders"))
+}
