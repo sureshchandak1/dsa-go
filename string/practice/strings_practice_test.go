@@ -25,3 +25,9 @@ func TestMakeGoodString(t *testing.T) {
 	fmt.Println(makeGoodStringStack("abBAcC"))
 	fmt.Println(makeGoodStringStack("s"))
 }
+
+func TestReversePrefix(t *testing.T) {
+	fmt.Println(reversePrefix("abcdefd", 'd'))
+	fmt.Println(reversePrefix("xyxzxe", 'z'))
+	fmt.Println(reversePrefix("abcd", 'z'))
+}
