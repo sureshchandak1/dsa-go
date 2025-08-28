@@ -16,3 +16,12 @@ func TestLengthOfLastWord(t *testing.T) {
 	fmt.Println(lengthOfLastWord("   fly me   to   the moon  "))
 	fmt.Println(lengthOfLastWord("luffy is still joyboy"))
 }
+
+func TestMakeGoodString(t *testing.T) {
+	fmt.Println(makeGoodString("leEeetcode"))
+	fmt.Println(makeGoodString("abBAcC"))
+	fmt.Println(makeGoodString("s"))
+	fmt.Println(makeGoodStringStack("leEeetcode"))
+	fmt.Println(makeGoodStringStack("abBAcC"))
+	fmt.Println(makeGoodStringStack("s"))
+}
