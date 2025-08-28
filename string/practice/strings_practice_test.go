@@ -31,3 +31,12 @@ func TestReversePrefix(t *testing.T) {
 	fmt.Println(reversePrefix("xyxzxe", 'z'))
 	fmt.Println(reversePrefix("abcd", 'z'))
 }
+
+func TestCompareVersion(t *testing.T) {
+	fmt.Println(compareVersion("1.2", "1.10"))
+	fmt.Println(compareVersion("1.01", "1.001"))
+	fmt.Println(compareVersion("1.0", "1.0.0.0"))
+	fmt.Println(compareVersionOptimized("1.2", "1.10"))
+	fmt.Println(compareVersionOptimized("1.01", "1.001"))
+	fmt.Println(compareVersionOptimized("1.0", "1.0.0.0"))
+}
