@@ -45,3 +45,8 @@ func TestFindRelativeRanks(t *testing.T) {
 	fmt.Println(findRelativeRanks([]int{5, 4, 3, 2, 1}))
 	fmt.Println(findRelativeRanks([]int{10, 3, 8, 9, 4}))
 }
+
+func TestScoreOfString(t *testing.T) {
+	fmt.Println(scoreOfString("hello"))
+	fmt.Println(scoreOfString("zaz"))
+}
