@@ -50,3 +50,13 @@ func TestScoreOfString(t *testing.T) {
 	fmt.Println(scoreOfString("hello"))
 	fmt.Println(scoreOfString("zaz"))
 }
+
+func TestReverseByteArray(t *testing.T) {
+	reverseByteArray([]rune{'h', 'e', 'l', 'l', 'o'})
+}
+
+func TestAppendCharacters(t *testing.T) {
+	fmt.Println(appendCharacters("coaching", "coding"))
+	fmt.Println(appendCharacters("abcde", "a"))
+	fmt.Println(appendCharacters("z", "abcde"))
+}
