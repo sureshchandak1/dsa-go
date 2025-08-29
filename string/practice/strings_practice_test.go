@@ -40,3 +40,8 @@ func TestCompareVersion(t *testing.T) {
 	fmt.Println(compareVersionOptimized("1.01", "1.001"))
 	fmt.Println(compareVersionOptimized("1.0", "1.0.0.0"))
 }
+
+func TestFindRelativeRanks(t *testing.T) {
+	fmt.Println(findRelativeRanks([]int{5, 4, 3, 2, 1}))
+	fmt.Println(findRelativeRanks([]int{10, 3, 8, 9, 4}))
+}
