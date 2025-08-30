@@ -77,3 +77,8 @@ func TestIsNStraightHand(t *testing.T) {
 	fmt.Println(isNStraightHand([]int{1, 2, 3, 6, 2, 3, 4, 7, 8}, 3))
 	fmt.Println(isNStraightHand([]int{1, 2, 3, 4, 5}, 4))
 }
+
+func TestReplaceWords(t *testing.T) {
+	fmt.Println(replaceWords([]string{"cat", "bat", "rat"}, "the cattle was rattled by the battery"))
+	fmt.Println(replaceWords([]string{"a", "b", "c"}, "aadsfasf absbs bbab cadsfafs"))
+}
