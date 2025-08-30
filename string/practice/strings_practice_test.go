@@ -67,3 +67,8 @@ func TestLongestPalindrome(t *testing.T) {
 	fmt.Println(longestPalindromeOptimized("abccccdd"))
 	fmt.Println(longestPalindromeOptimized("a"))
 }
+
+func TestCommonChars(t *testing.T) {
+	fmt.Println(commonChars([]string{"bella", "label", "roller"}))
+	fmt.Println(commonChars([]string{"cool", "lock", "cook"}))
+}
