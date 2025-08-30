@@ -60,3 +60,10 @@ func TestAppendCharacters(t *testing.T) {
 	fmt.Println(appendCharacters("abcde", "a"))
 	fmt.Println(appendCharacters("z", "abcde"))
 }
+
+func TestLongestPalindrome(t *testing.T) {
+	fmt.Println(longestPalindrome("abccccdd"))
+	fmt.Println(longestPalindrome("a"))
+	fmt.Println(longestPalindromeOptimized("abccccdd"))
+	fmt.Println(longestPalindromeOptimized("a"))
+}
