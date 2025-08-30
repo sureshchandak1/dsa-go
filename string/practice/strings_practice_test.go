@@ -72,3 +72,8 @@ func TestCommonChars(t *testing.T) {
 	fmt.Println(commonChars([]string{"bella", "label", "roller"}))
 	fmt.Println(commonChars([]string{"cool", "lock", "cook"}))
 }
+
+func TestIsNStraightHand(t *testing.T) {
+	fmt.Println(isNStraightHand([]int{1, 2, 3, 6, 2, 3, 4, 7, 8}, 3))
+	fmt.Println(isNStraightHand([]int{1, 2, 3, 4, 5}, 4))
+}
