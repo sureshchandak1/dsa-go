@@ -82,3 +82,12 @@ func TestReplaceWords(t *testing.T) {
 	fmt.Println(replaceWords([]string{"cat", "bat", "rat"}, "the cattle was rattled by the battery"))
 	fmt.Println(replaceWords([]string{"a", "b", "c"}, "aadsfasf absbs bbab cadsfafs"))
 }
+
+func TestReverseParenthesesString(t *testing.T) {
+	fmt.Println(reverseParenthesesString("(abcd)"))
+	fmt.Println(reverseParenthesesString("(u(love)i)"))
+	fmt.Println(reverseParenthesesString("(ed(et(oc))el)"))
+	fmt.Println(reverseParenthesesStringOptimized("(abcd)"))
+	fmt.Println(reverseParenthesesStringOptimized("(u(love)i)"))
+	fmt.Println(reverseParenthesesStringOptimized("(ed(et(oc))el)"))
+}
