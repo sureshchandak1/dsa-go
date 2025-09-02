@@ -96,3 +96,10 @@ func TestMaximumGain(t *testing.T) {
 	fmt.Println(maximumGain("cdbcbbaaabab", 4, 5))
 	fmt.Println(maximumGain("aabbaaxybbaabb", 5, 4))
 }
+
+func TestCountSeniors(t *testing.T) {
+	fmt.Println(countSeniors([]string{"7868190130M7522", "5303914400F9211", "9273338290F4010"}))
+	fmt.Println(countSeniors([]string{"1313579440F2036", "2921522980M5644"}))
+	fmt.Println(countSeniorsOptimized([]string{"7868190130M7522", "5303914400F9211", "9273338290F4010"}))
+	fmt.Println(countSeniorsOptimized([]string{"1313579440F2036", "2921522980M5644"}))
+}
