@@ -91,3 +91,8 @@ func TestReverseParenthesesString(t *testing.T) {
 	fmt.Println(reverseParenthesesStringOptimized("(u(love)i)"))
 	fmt.Println(reverseParenthesesStringOptimized("(ed(et(oc))el)"))
 }
+
+func TestMaximumGain(t *testing.T) {
+	fmt.Println(maximumGain("cdbcbbaaabab", 4, 5))
+	fmt.Println(maximumGain("aabbaaxybbaabb", 5, 4))
+}
