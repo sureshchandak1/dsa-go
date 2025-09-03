@@ -109,3 +109,8 @@ func TestFractionAddition(t *testing.T) {
 	fmt.Println(fractionAddition("-1/2+1/2+1/3"))
 	fmt.Println(fractionAddition("1/3-1/2"))
 }
+
+func TestNearestPalindromic(t *testing.T) {
+	fmt.Println(nearestPalindromic("123"))
+	fmt.Println(nearestPalindromic("1"))
+}
