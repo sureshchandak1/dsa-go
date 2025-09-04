@@ -114,3 +114,9 @@ func TestNearestPalindromic(t *testing.T) {
 	fmt.Println(nearestPalindromic("123"))
 	fmt.Println(nearestPalindromic("1"))
 }
+
+func TestGetSumStringDigits(t *testing.T) {
+	fmt.Println(getSumStringDigits("iiii", 1))
+	fmt.Println(getSumStringDigits("leetcode", 2))
+	fmt.Println(getSumStringDigits("zbax", 2))
+}
