@@ -120,3 +120,8 @@ func TestGetSumStringDigits(t *testing.T) {
 	fmt.Println(getSumStringDigits("leetcode", 2))
 	fmt.Println(getSumStringDigits("zbax", 2))
 }
+
+func TestFindMinDifference(t *testing.T) {
+	fmt.Println(findMinDifference([]string{"23:59", "00:00"}))
+	fmt.Println(findMinDifference([]string{"00:00", "23:59", "00:00"}))
+}
