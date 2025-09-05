@@ -125,3 +125,8 @@ func TestFindMinDifference(t *testing.T) {
 	fmt.Println(findMinDifference([]string{"23:59", "00:00"}))
 	fmt.Println(findMinDifference([]string{"00:00", "23:59", "00:00"}))
 }
+
+func TestUncommonFromSentences(t *testing.T) {
+	fmt.Println(uncommonFromSentences("this apple is sweet", "this apple is sour"))
+	fmt.Println(uncommonFromSentences("apple apple", "banana"))
+}
