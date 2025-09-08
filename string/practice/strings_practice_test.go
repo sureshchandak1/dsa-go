@@ -135,3 +135,10 @@ func TestLargestNumber(t *testing.T) {
 	fmt.Println(largestNumber([]int{10, 2}))
 	fmt.Println(largestNumber([]int{3, 30, 34, 5, 9}))
 }
+
+func TestPermutationInString(t *testing.T) {
+	fmt.Println(permutationInString("ab", "eidbaooo"))
+	fmt.Println(permutationInString("ab", "eidboaoo"))
+	fmt.Println(permutationInStringOptimized("ab", "eidbaooo"))
+	fmt.Println(permutationInStringOptimized("ab", "eidboaoo"))
+}
