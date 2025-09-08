@@ -130,3 +130,8 @@ func TestUncommonFromSentences(t *testing.T) {
 	fmt.Println(uncommonFromSentences("this apple is sweet", "this apple is sour"))
 	fmt.Println(uncommonFromSentences("apple apple", "banana"))
 }
+
+func TestLargestNumber(t *testing.T) {
+	fmt.Println(largestNumber([]int{10, 2}))
+	fmt.Println(largestNumber([]int{3, 30, 34, 5, 9}))
+}
