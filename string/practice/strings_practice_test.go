@@ -142,3 +142,9 @@ func TestPermutationInString(t *testing.T) {
 	fmt.Println(permutationInStringOptimized("ab", "eidbaooo"))
 	fmt.Println(permutationInStringOptimized("ab", "eidboaoo"))
 }
+
+func TestAreSentencesSimilar(t *testing.T) {
+	fmt.Println(areSentencesSimilar("My name is Haley", "My Haley"))
+	fmt.Println(areSentencesSimilar("of", "A lot of words"))
+	fmt.Println(areSentencesSimilar("Eating right now", "Eating"))
+}
