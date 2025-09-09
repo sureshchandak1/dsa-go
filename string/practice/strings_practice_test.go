@@ -148,3 +148,10 @@ func TestAreSentencesSimilar(t *testing.T) {
 	fmt.Println(areSentencesSimilar("of", "A lot of words"))
 	fmt.Println(areSentencesSimilar("Eating right now", "Eating"))
 }
+
+func TestMinLengthRemoveSubstring(t *testing.T) {
+	fmt.Println(minLengthRemoveSubstring("ABFCACDB"))
+	fmt.Println(minLengthRemoveSubstring("ACBBD"))
+	fmt.Println(minLengthRemoveSubstringOptimized("ABFCACDB"))
+	fmt.Println(minLengthRemoveSubstringOptimized("ACBBD"))
+}
