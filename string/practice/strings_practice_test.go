@@ -161,3 +161,8 @@ func TestMinimumStepsSeparateBlackWhiteBalls(t *testing.T) {
 	fmt.Println(minimumStepsSeparateBlackWhiteBalls("100"))
 	fmt.Println(minimumStepsSeparateBlackWhiteBalls("0111"))
 }
+
+func TestLongestDiverseString(t *testing.T) {
+	fmt.Println(longestDiverseString(1, 1, 7))
+	fmt.Println(longestDiverseString(7, 1, 0))
+}
