@@ -155,3 +155,9 @@ func TestMinLengthRemoveSubstring(t *testing.T) {
 	fmt.Println(minLengthRemoveSubstringOptimized("ABFCACDB"))
 	fmt.Println(minLengthRemoveSubstringOptimized("ACBBD"))
 }
+
+func TestMinimumStepsSeparateBlackWhiteBalls(t *testing.T) {
+	fmt.Println(minimumStepsSeparateBlackWhiteBalls("101"))
+	fmt.Println(minimumStepsSeparateBlackWhiteBalls("100"))
+	fmt.Println(minimumStepsSeparateBlackWhiteBalls("0111"))
+}
