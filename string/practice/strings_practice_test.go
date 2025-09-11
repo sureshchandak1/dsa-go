@@ -171,3 +171,9 @@ func TestFindKthBit(t *testing.T) {
 	fmt.Println(findKthBit(3, 1))
 	fmt.Println(findKthBit(4, 11))
 }
+
+func TestParseBoolExpr(t *testing.T) {
+	fmt.Println(parseBoolExpr("&(|(f))"))
+	fmt.Println(parseBoolExpr("|(f,f,f,t)"))
+	fmt.Println(parseBoolExpr("!(&(f,t))"))
+}
