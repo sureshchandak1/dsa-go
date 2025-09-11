@@ -166,3 +166,8 @@ func TestLongestDiverseString(t *testing.T) {
 	fmt.Println(longestDiverseString(1, 1, 7))
 	fmt.Println(longestDiverseString(7, 1, 0))
 }
+
+func TestFindKthBit(t *testing.T) {
+	fmt.Println(findKthBit(3, 1))
+	fmt.Println(findKthBit(4, 11))
+}
