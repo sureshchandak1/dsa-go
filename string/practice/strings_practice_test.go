@@ -177,3 +177,9 @@ func TestParseBoolExpr(t *testing.T) {
 	fmt.Println(parseBoolExpr("|(f,f,f,t)"))
 	fmt.Println(parseBoolExpr("!(&(f,t))"))
 }
+
+func TestMaxUniqueSplit(t *testing.T) {
+	fmt.Println(maxUniqueSplit("ababccc"))
+	fmt.Println(maxUniqueSplit("aba"))
+	fmt.Println(maxUniqueSplit("aa"))
+}
