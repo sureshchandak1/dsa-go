@@ -192,3 +192,9 @@ func TestIsPrefixOfWord(t *testing.T) {
 	fmt.Println(isPrefixOfWordSolve("this problem is an easy problem", "pro"))
 	fmt.Println(isPrefixOfWordSolve("i am tired", "you"))
 }
+
+func TestAddSpaces(t *testing.T) {
+	fmt.Println(addSpaces("LeetcodeHelpsMeLearn", []int{8, 13, 15}))
+	fmt.Println(addSpaces("icodeinpython", []int{1, 5, 7, 9}))
+	fmt.Println(addSpaces("spacing", []int{0, 1, 2, 3, 4, 5, 6}))
+}
