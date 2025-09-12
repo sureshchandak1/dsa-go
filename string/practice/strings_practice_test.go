@@ -183,3 +183,12 @@ func TestMaxUniqueSplit(t *testing.T) {
 	fmt.Println(maxUniqueSplit("aba"))
 	fmt.Println(maxUniqueSplit("aa"))
 }
+
+func TestIsPrefixOfWord(t *testing.T) {
+	fmt.Println(isPrefixOfWord("i love eating burger", "burg"))
+	fmt.Println(isPrefixOfWord("this problem is an easy problem", "pro"))
+	fmt.Println(isPrefixOfWord("i am tired", "you"))
+	fmt.Println(isPrefixOfWordSolve("i love eating burger", "burg"))
+	fmt.Println(isPrefixOfWordSolve("this problem is an easy problem", "pro"))
+	fmt.Println(isPrefixOfWordSolve("i am tired", "you"))
+}
