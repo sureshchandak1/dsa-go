@@ -198,3 +198,9 @@ func TestAddSpaces(t *testing.T) {
 	fmt.Println(addSpaces("icodeinpython", []int{1, 5, 7, 9}))
 	fmt.Println(addSpaces("spacing", []int{0, 1, 2, 3, 4, 5, 6}))
 }
+
+func TestCanMakeSubsequence(t *testing.T) {
+	fmt.Println(canMakeSubsequence("abc", "ad"))
+	fmt.Println(canMakeSubsequence("zc", "ad"))
+	fmt.Println(canMakeSubsequence("ab", "d"))
+}
