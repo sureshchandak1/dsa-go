@@ -204,3 +204,9 @@ func TestCanMakeSubsequence(t *testing.T) {
 	fmt.Println(canMakeSubsequence("zc", "ad"))
 	fmt.Println(canMakeSubsequence("ab", "d"))
 }
+
+func TestMovePiecesToTarget(t *testing.T) {
+	fmt.Println(movePiecesToTarget("_L__R__R_", "L______RR"))
+	fmt.Println(movePiecesToTarget("R_L_", "__LR"))
+	fmt.Println(movePiecesToTarget("_R", "R_"))
+}
