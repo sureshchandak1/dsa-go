@@ -210,3 +210,9 @@ func TestMovePiecesToTarget(t *testing.T) {
 	fmt.Println(movePiecesToTarget("R_L_", "__LR"))
 	fmt.Println(movePiecesToTarget("_R", "R_"))
 }
+
+func TestFindLongestSpecialSubstring(t *testing.T) {
+	fmt.Println(findLongestSpecialSubstring("aaaa"))
+	fmt.Println(findLongestSpecialSubstring("abcdef"))
+	fmt.Println(findLongestSpecialSubstring("abcaba"))
+}
