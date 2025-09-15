@@ -222,3 +222,8 @@ func TestMaxScoreAfterSplitting(t *testing.T) {
 	fmt.Println(maxScoreAfterSplitting("00111"))
 	fmt.Println(maxScoreAfterSplitting("1111"))
 }
+
+func TestVowelStrings(t *testing.T) {
+	fmt.Println(vowelStrings([]string{"aba", "bcb", "ece", "aa", "e"}, [][]int{{0, 2}, {1, 4}, {1, 1}}))
+	fmt.Println(vowelStrings([]string{"a", "e", "i"}, [][]int{{0, 2}, {0, 1}, {2, 2}}))
+}
