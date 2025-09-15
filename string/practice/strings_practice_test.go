@@ -216,3 +216,9 @@ func TestFindLongestSpecialSubstring(t *testing.T) {
 	fmt.Println(findLongestSpecialSubstring("abcdef"))
 	fmt.Println(findLongestSpecialSubstring("abcaba"))
 }
+
+func TestMaxScoreAfterSplitting(t *testing.T) {
+	fmt.Println(maxScoreAfterSplitting("011101"))
+	fmt.Println(maxScoreAfterSplitting("00111"))
+	fmt.Println(maxScoreAfterSplitting("1111"))
+}
