@@ -232,3 +232,9 @@ func TestShiftingLetters(t *testing.T) {
 	fmt.Println(shiftingLetters("abc", [][]int{{0, 1, 0}, {1, 2, 1}, {0, 2, 1}}))
 	fmt.Println(shiftingLetters("dztz", [][]int{{0, 0, 0}, {1, 1, 1}}))
 }
+
+func TestStringMatching(t *testing.T) {
+	fmt.Println(stringMatching([]string{"mass", "as", "hero", "superhero"}))
+	fmt.Println(stringMatching([]string{"leetcode", "et", "code"}))
+	fmt.Println(stringMatching([]string{"blue", "green", "bu"}))
+}
