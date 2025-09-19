@@ -244,3 +244,9 @@ func TestCountPrefixSuffixPairs(t *testing.T) {
 	fmt.Println(countPrefixSuffixPairs([]string{"pa", "papa", "ma", "mama"}))
 	fmt.Println(countPrefixSuffixPairs([]string{"abab", "ab"}))
 }
+
+func TestCanConstruct(t *testing.T) {
+	fmt.Println(canConstruct("annabelle", 2))
+	fmt.Println(canConstruct("leetcode", 3))
+	fmt.Println(canConstruct("true", 4))
+}
