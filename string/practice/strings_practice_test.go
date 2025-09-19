@@ -238,3 +238,9 @@ func TestStringMatching(t *testing.T) {
 	fmt.Println(stringMatching([]string{"leetcode", "et", "code"}))
 	fmt.Println(stringMatching([]string{"blue", "green", "bu"}))
 }
+
+func TestCountPrefixSuffixPairs(t *testing.T) {
+	fmt.Println(countPrefixSuffixPairs([]string{"a", "aba", "ababa", "aa"}))
+	fmt.Println(countPrefixSuffixPairs([]string{"pa", "papa", "ma", "mama"}))
+	fmt.Println(countPrefixSuffixPairs([]string{"abab", "ab"}))
+}
