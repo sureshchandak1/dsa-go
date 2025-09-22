@@ -261,3 +261,10 @@ func TestAreAlmostEqual(t *testing.T) {
 	fmt.Println(areAlmostEqual("attack", "defend"))
 	fmt.Println(areAlmostEqual("kelb", "kelb"))
 }
+
+func TestClearDigits(t *testing.T) {
+	fmt.Println(clearDigits("abc"))
+	fmt.Println(clearDigits("cb34"))
+	fmt.Println(clearDigitsWithStack("abc"))
+	fmt.Println(clearDigitsWithStack("cb34"))
+}
