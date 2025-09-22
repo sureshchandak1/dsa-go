@@ -250,3 +250,8 @@ func TestCanConstruct(t *testing.T) {
 	fmt.Println(canConstruct("leetcode", 3))
 	fmt.Println(canConstruct("true", 4))
 }
+
+func TestMinimumLengthAfterOperations(t *testing.T) {
+	fmt.Println(minimumLengthAfterOperations("abaacbcbb"))
+	fmt.Println(minimumLengthAfterOperations("aa"))
+}
