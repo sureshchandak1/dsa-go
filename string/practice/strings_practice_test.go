@@ -255,3 +255,9 @@ func TestMinimumLengthAfterOperations(t *testing.T) {
 	fmt.Println(minimumLengthAfterOperations("abaacbcbb"))
 	fmt.Println(minimumLengthAfterOperations("aa"))
 }
+
+func TestAreAlmostEqual(t *testing.T) {
+	fmt.Println(areAlmostEqual("bank", "kanb"))
+	fmt.Println(areAlmostEqual("attack", "defend"))
+	fmt.Println(areAlmostEqual("kelb", "kelb"))
+}
