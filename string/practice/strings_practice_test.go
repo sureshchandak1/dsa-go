@@ -268,3 +268,8 @@ func TestClearDigits(t *testing.T) {
 	fmt.Println(clearDigitsWithStack("abc"))
 	fmt.Println(clearDigitsWithStack("cb34"))
 }
+
+func TestRemoveOccurrences(t *testing.T) {
+	fmt.Println(removeOccurrences("daabcbaabcbc", "abc"))
+	fmt.Println(removeOccurrences("axxxxyyyyb", "xy"))
+}
