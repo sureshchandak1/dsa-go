@@ -41,3 +41,9 @@ func TestValidPath(t *testing.T) {
 	fmt.Println(validPath(3, [][]int{{0, 1}, {1, 2}, {2, 0}}, 0, 2))
 	fmt.Println(validPath(6, [][]int{{0, 1}, {0, 2}, {3, 5}, {5, 4}, {4, 3}}, 0, 5))
 }
+
+func TestFindRotateSteps(t *testing.T) {
+	fmt.Println(findRotateSteps("godding", "gd"))
+	fmt.Println(findRotateSteps("godding", "gg"))
+	fmt.Println(findRotateSteps("godding", "godding"))
+}
