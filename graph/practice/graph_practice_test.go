@@ -52,3 +52,8 @@ func TestMinOperationsForXORtoK(t *testing.T) {
 	fmt.Println(minOperationsForXORtoK([]int{2, 1, 3, 4}, 1))
 	fmt.Println(minOperationsForXORtoK([]int{2, 0, 2, 0}, 0))
 }
+
+func TestMaximumGold(t *testing.T) {
+	fmt.Println(getMaximumGold([][]int{{0, 6, 0}, {5, 8, 7}, {0, 9, 0}}))
+	fmt.Println(getMaximumGold([][]int{{1, 0, 7}, {2, 0, 6}, {3, 4, 5}, {0, 3, 0}, {9, 0, 20}}))
+}
