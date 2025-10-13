@@ -47,3 +47,8 @@ func TestFindRotateSteps(t *testing.T) {
 	fmt.Println(findRotateSteps("godding", "gg"))
 	fmt.Println(findRotateSteps("godding", "godding"))
 }
+
+func TestMinOperationsForXORtoK(t *testing.T) {
+	fmt.Println(minOperationsForXORtoK([]int{2, 1, 3, 4}, 1))
+	fmt.Println(minOperationsForXORtoK([]int{2, 0, 2, 0}, 0))
+}
