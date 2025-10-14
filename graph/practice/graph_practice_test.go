@@ -63,3 +63,10 @@ func TestMaximumSafenessFactor(t *testing.T) {
 	fmt.Println(maximumSafenessFactor([][]int{{0, 0, 1}, {0, 0, 0}, {0, 0, 0}}))
 	fmt.Println(maximumSafenessFactor([][]int{{0, 0, 0, 1}, {0, 0, 0, 0}, {0, 0, 0, 0}, {1, 0, 0, 0}}))
 }
+
+func TestFindStarGraphCenter(t *testing.T) {
+	fmt.Println(findStarGraphCenter([][]int{{1, 2}, {2, 3}, {4, 2}}))
+	fmt.Println(findStarGraphCenter([][]int{{1, 2}, {5, 1}, {1, 3}, {1, 4}}))
+	fmt.Println(findStarGraphCenterOptimized([][]int{{1, 2}, {2, 3}, {4, 2}}))
+	fmt.Println(findStarGraphCenterOptimized([][]int{{1, 2}, {5, 1}, {1, 3}, {1, 4}}))
+}
