@@ -57,3 +57,9 @@ func TestMaximumGold(t *testing.T) {
 	fmt.Println(getMaximumGold([][]int{{0, 6, 0}, {5, 8, 7}, {0, 9, 0}}))
 	fmt.Println(getMaximumGold([][]int{{1, 0, 7}, {2, 0, 6}, {3, 4, 5}, {0, 3, 0}, {9, 0, 20}}))
 }
+
+func TestMaximumSafenessFactor(t *testing.T) {
+	fmt.Println(maximumSafenessFactor([][]int{{1, 0, 0}, {0, 0, 0}, {0, 0, 1}}))
+	fmt.Println(maximumSafenessFactor([][]int{{0, 0, 1}, {0, 0, 0}, {0, 0, 0}}))
+	fmt.Println(maximumSafenessFactor([][]int{{0, 0, 0, 1}, {0, 0, 0, 0}, {0, 0, 0, 0}, {1, 0, 0, 0}}))
+}
