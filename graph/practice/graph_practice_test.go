@@ -75,3 +75,10 @@ func TestMaximumImportance(t *testing.T) {
 	fmt.Println(maximumImportance(5, [][]int{{0, 1}, {1, 2}, {2, 3}, {0, 2}, {1, 3}, {2, 4}}))
 	fmt.Println(maximumImportance(5, [][]int{{0, 3}, {2, 4}, {1, 3}}))
 }
+
+func TestGetAncestors(t *testing.T) {
+	fmt.Println(getAncestors(8, [][]int{{0, 3}, {0, 4}, {1, 3}, {2, 4}, {2, 7}, {3, 5}, {3, 6}, {3, 7}, {4, 6}}))
+	fmt.Println(getAncestors(5, [][]int{{0, 1}, {0, 2}, {0, 3}, {0, 4}, {1, 2}, {1, 3}, {1, 4}, {2, 3}, {2, 4}, {3, 4}}))
+	fmt.Println(getAncestorsOptimized(8, [][]int{{0, 3}, {0, 4}, {1, 3}, {2, 4}, {2, 7}, {3, 5}, {3, 6}, {3, 7}, {4, 6}}))
+	fmt.Println(getAncestorsOptimized(5, [][]int{{0, 1}, {0, 2}, {0, 3}, {0, 4}, {1, 2}, {1, 3}, {1, 4}, {2, 3}, {2, 4}, {3, 4}}))
+}
